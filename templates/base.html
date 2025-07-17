@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{% block title %}AetherFlask{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>AetherFlask ☁️ – DevOps Dashboard</h1>
+    <nav>
+      <a href="/">Home</a> |
+      <a href="/projects">Projects</a> |
+      <a href="/pipeline">CI/CD</a> |
+      <a href="/logs">Logs</a> |
+      <a href="/about">About</a> |
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    <p>© 2025 Vinayak • DevOps Cloud Portfolio</p>
+  </footer>
+</body>
+</html>
