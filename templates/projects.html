@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Projects{% endblock %}
+{% block content %}
+<h2>🚧 My DevOps Projects</h2>
+
+<div>
+  <h3>🔄 CI/CD Pipeline for Flask App</h3>
+  <p>Created a robust CI/CD pipeline using <strong>GitHub Actions</strong> to automatically build, test, and deploy Flask apps to <strong>Azure App Service</strong>. Enabled rollback and deployment previews.</p>
+  <p><strong>Tools:</strong> GitHub Actions, Azure, Gunicorn, Flask</p>
+  <a href="https://github.com/vinayaknaik017/flask-cicd-pipeline" target="_blank">🔗 View Project</a>
+</div>
+<hr>
+
+<div>
+  <h3>☸️ Kubernetes Monitoring Stack</h3>
+  <p>Deployed a <strong>Prometheus + Grafana</strong> stack on a Kubernetes cluster to monitor containerized workloads. Visualized real-time metrics, alerts, and logs.</p>
+  <p><strong>Tools:</strong> Kubernetes, Helm, Prometheus, Grafana, Loki</p>
+  <a href="https://github.com/vinayaknaik017/k8s-monitoring" target="_blank">🔗 View Project</a>
+</div>
+<hr>
+
+<div>
+  <h3>📦 AWS Infrastructure Automation with Terraform</h3>
+  <p>Used <strong>Terraform</strong> to provision a complete AWS infrastructure setup including EC2, S3, RDS, IAM, and VPC networking — all version-controlled and modularized.</p>
+  <p><strong>Tools:</strong> Terraform, AWS, GitHub</p>
+  <a href="https://github.com/vinayaknaik017/aws-terraform-iac" target="_blank">🔗 View Project</a>
+</div>
+<hr>
+{% endblock %}
